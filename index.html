@@ -6,13 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Estoque</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
+    <header>
+     
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-transparent position-static top-0 m-0 p-2 w-100 d-flex flex-row justify-content-center align-itens-center" style="z-index: 99; height: 80px;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse p-2 w-100" id="navbarMenu">
+                    <div class="navbar-nav justify-content-around d-flex flex-row w-100">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">Conheça a Berry's</a>
+                        <a href="#" class="nav-item nav-link">Nossas Lojas</a>
+                    </div>
+                </div>
+                <a href="index.html" class="navbar-brand flex-shrink-1 position-static start-25 m-0 p-0" style="width: 12%;">
+                    <img src="assets/images/vaquinha sem fundo.png" class="w-100" style="border-bottom-left-radius: 50%;border-bottom-right-radius: 50%; background-color: #85BAD0;">
+                </a>
+                <div class="navbar-collapse collapse p-2 w-100" id="navbarMenu">
+                    <div class="navbar-nav justify-content-around d-flex ms-2 flex-row w-100">
+                        <a href="#" class="nav-item nav-link">Produtos Berry's</a>
+                        <a href="#" class="nav-item nav-link">Seja um Franqueado</a>
+                        <a href="#" class="nav-item nav-link">Fale Conosco</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
     <section class="tab">
-        <table>
-            <caption>
-                Controle de Produção
-            </caption>
+        <table id="tabela-zebrada">
             <thead>
                 <tr>
                     <th>Sabor</th>
@@ -21,29 +48,31 @@
                     <th>Pré-Produção</th>
                     <th>Produção</th>
                     <th>Retirada</th>
+                    <th id="oculto">Necessário</th>
                 </tr>
 
             </thead>
             <tbody>
                 <tr>
                     <td>Nuttela</td>
-                    <td>
-                        <input type="number">
-                    </td>
+                    <td><input type="number"></td>
                     <td>..</td>
                     <td><input type="number" id="dig" name=""></td>
                     <td><input type="number" id="dig" name=""></td>
                     <td><input type="number" id="dig" name=""></td>
+                    <td id="oculto">11 </td>
+                    
                 </tr>
                 
                 <tr>
-                    <tr>
+                    <tr  class="active-row">
                         <td>Morango</td>
                         <td>..</td>
                         <td>..</td>
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
+                        <td id="oculto">22 </td>
                     </tr>
                 </tr>
     
@@ -55,6 +84,7 @@
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
+                        <td id="oculto">33 </td>
                     </tr>
                 </tr>
     
@@ -66,6 +96,7 @@
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
+                        <td id="oculto">44 </td>
                     </tr>
                 </tr>
     
@@ -77,6 +108,7 @@
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
                         <td><input type="number" id="dig" name=""></td>
+                        <td id="oculto">55 </td>
                     </tr>
                 </tr>
 
@@ -94,6 +126,33 @@
 
         </table>
     </section>
+    <footer>    
+        <div class="container rodape">
+            <div class="logo-fim">
+                <a href="index.html" class="logo-rodape">
+                    <img src="../Controle-de-Produ--o---Berrys/assets/images/logo_rodape1638889516-logo-footer.png" alt="">
+                </a>
+            </div>
 
+            <div class="text-rodape">
+                <p style="color: antiquewhite; text-align: center; align-items: center; margin: 0;">
+                    Copyright @ 2023. Todos os direitos reservados.
+                </p>
+            </div>
+            
+            <div class="redes-sociais">
+                <a id="logo-sociais" href="https://www.instagram.com/berys" class="fa fa-instagram"></a>
+                <a id="logo-sociais" href="" class="fa fa-facebook"></a>
+                <a id="logo-sociais" href="" class="fa fa-whatsapp"></a>
+                <a id="logo-sociais" href="" class="fa fa-youtube"></a>
+                <a id="logo-sociais" href="" class="fa fa-envelope"></a>
+            </div>
+                      
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>

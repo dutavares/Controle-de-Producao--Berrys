@@ -2,45 +2,54 @@
     box-sizing: border-box;
 }
 body {
+    width: 100vw;
+    height: 10vh;
     margin: 50px;
     font-size: 20px;
     background-image: url(../images/tijolinhos.png);
 }
+header {
+    background-color: #005C99;
+    font-size: 20px;
+    
+}
 .tab {
+    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+    height: calc(100vh - 240px);
 }
 table{
-    width: 800px;
+    min-width: 900px;
     border-collapse: collapse;
-    background-color: whitesmoke;
-
-    
+    margin: 25px 0;
+    background-color: rgb(238, 237, 237);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-caption {
-    padding: 10px;
-    border: 1px solid black;
-    border-top-left-radius: 5px ;
-    border-top-right-radius: 5px ;
-    background-color: rgb(127, 255, 255);
-}
-th, td {
-    border: 1px solid black;
-    
-    padding: 10px;
+th, td {    
+    padding: 12px 15px;
     text-align: center;
+    justify-content: center;
 }
 thead {
     background-color: #CCC;
 }
-tbody > tr:nth-child(even){
-    background-color: #eee;
+tr {
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #ddd;
 }
 tbody tr:hover {
-    background-color: #eee;
+    background-color: rgb(202, 199, 199);
     cursor: pointer;
+}
+tbody tr.active-row {
+    font-weight: bold;
+    color: rgb(12, 107, 107);
 }
 #dig {
     width: 100%;
@@ -49,9 +58,39 @@ tbody tr:hover {
     padding: 0;
     margin: 0;
     text-align: center;
+    background-color: rgb(238, 237, 237);
+    border-bottom: 1px solid #CCC;
 }
-tfoot {
-
-   
+#oculto {
+    display: none;
+}
+tfoot td {
+    border-bottom: 3px solid rgb(12, 107, 107);
+     
     
+}
+footer {
+    background-color: #005C99;
+    height: 100px;
+    
+}
+.rodape {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.logo-rodape {
+   
+    width: 50px;
+    
+}
+#logo-sociais {
+    color: antiquewhite;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 10px 0 0;
 }

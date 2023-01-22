@@ -21,7 +21,7 @@ header {
     height: calc(100vh - 240px);
 }
 table{
-    min-width: 900px;
+    width: 70vw;
     border-collapse: collapse;
     margin: 25px 0;
     background-color: rgb(238, 237, 237);
@@ -35,7 +35,8 @@ th, td {
     justify-content: center;
 }
 thead {
-    background-color: #CCC;
+    background-color: #005C99;
+    color: white;
 }
 tr {
     text-align: center;
@@ -49,7 +50,7 @@ tbody tr:hover {
 }
 tbody tr.active-row {
     font-weight: bold;
-    color: rgb(12, 107, 107);
+    color: #005C99;
 }
 #dig {
     width: 100%;
@@ -65,7 +66,7 @@ tbody tr.active-row {
     display: none;
 }
 tfoot td {
-    border-bottom: 3px solid rgb(12, 107, 107);
+    border-bottom: 3px solid #005C99;
      
     
 }
@@ -82,6 +83,9 @@ footer {
     text-align: center;
     justify-content: space-around;
 
+}
+.logo-fim {
+    margin-top: 10px;
 }
 .logo-rodape {
    
